@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root{
+  --base3: #866BBF;
+  --purple: #8760BF;
+  --green: #9FAA73;
+  --base1: #B7ADD9;
+  --base2: #8C84BF;
+}
+
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+  background: white;
+}
+
+.inline{
+  display: inline-block;
+}
+
+.lists{
+  position: relative;
+  z-index:4; /* ???? */
+  top : 30%;
+	right: 10%;
+	position: fixed;
+}
+
+.lists > .list{
+  height: 45px;
+  font-size: 5px;
+  color: var(--base3);
+}
+
+a{
+  text-decoration-line: none;
+}
+
+.list a:link, .list a:visited{
+	color: var(--base3);
+}
+
+.list a:hover{
+	color: var(--green);
+}
+
+#header{
+  background-image : url("./purple.jpg");
+  height: 700px;
+  padding: 100px;
+  border-bottom:2px solid var(--green);
+  box-shadow: 5px 1px 5px gray;
+}
+
+.header_text1{
+  text-align: center;
+  font-size: 70px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: var(--purple);
+  margin-bottom: 35px;
+}
+
+.header_text2{
+  text-align: center;
+  font-size: 25px;
+  color: var(--base3);
+  margin-bottom: 15px;
+}
+
+.header_text3{
+  text-align: center;
+  font-size: 17px;
+  line-height: 170%;
+  color: var(--base3);
+}
+
+#order{
+  height: 550px;
+  padding-top: 130px;
+}
+
+.order_1{
+  margin-left: 65px;
+  width: 350px;
+}
+
+.order_2{
+  margin-left: 35px;
+  margin-right: 40px;
+  width: 350px;
+}
+
+.order_3{
+  vertical-align: top;
+  width: 350px;
+}
+
+.order_1 > .circle{
+  background: var(--base1);
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 180px;
+  font-size: 70px;
+	width: 180px;
+	height: 180px;
+	border-radius: 100%;
+}
+
+.order_1 > .text1{
+  text-align: center;
+  font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+
+}
+
+.order_1 > .line{
+  color: var(--base1);
+}
+
+.order_1 > .text2{
+  text-align: center;
+  font-size: 15px;
+  line-height: 170%;
+  weight: 180px;
+  word-break: break-all;
+}
+
+.order_2 > .circle{
+  background: var(--base2);
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 180px;
+  font-size: 70px;
+	width: 180px;
+	height: 180px;
+	border-radius: 100%;
+}
+
+.order_2 > .text1{
+  text-align: center;
+  font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.order_2 > .line{
+  color: var(--base2);
+}
+
+.order_2 > .text2{
+  text-align: center;
+  font-size: 15px;
+  line-height: 170%;
+}
+
+.order_3 > .circle{
+  background: var(--base3);
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 180px;
+  font-size: 70px;
+	width: 180px;
+	height: 180px;
+	border-radius: 100%;
+}
+
+.order_3 > .text1{
+  text-align: center;
+  font-size: 25px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.order_3 > .line{
+  color: var(--base3);
+}
+
+.order_3 > .text2{
+  text-align: center;
+  font-size: 15px;
+  line-height: 170%;
+}
+
+.image_1{
+  position: relative;
+  z-index:2;
+  text-align: center; /*circle center*/
+  background: var(--base1);
+  color: white;
+  margin: 0 auto;
+  line-height: 80px;
+  font-size: 30px;
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+}
+
+#me{
+  background-image: url("./purple2.jpg");
+  position: relative;
+  z-index:1;
+  top: -40px;
+  height: 190px;
+  color: white;
+}
+
+.rgb{
+  background-color: rgba(183, 173, 217, 0.5);
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
+.me_title{
+  padding-top: 60px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  letter-spacing: 8px;
+}
+
+#me2{
+  height: 380px;
+}
+
+.me_element{
+  padding-top: 40px;
+  position: relative;
+  height: 270px;
+}
+
+.name{
+  position: absolute;
+  left: 15%;
+}
+
+.birth{
+  position: absolute;
+  left: 55%;
+}
+
+.email{
+  position: absolute;
+  left: 15%;
+  top: 60%;
+}
+
+.university{
+  position: absolute;
+  left: 55%;
+  top: 60%;
+}
+
+.question{
+  font-size: 35px;
+  letter-spacing: 5px;
+
+}
+.answer{
+  padding-left : 10px;
+  font-size: 20px;
+}
+
+.me_text{
+  font-size: 17px;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+.image_2{
+  position: relative;
+  z-index:2;
+  text-align: center; /*circle center*/
+  background: var(--base2);
+  color: white;
+  margin: 0 auto;
+  line-height: 80px;
+  font-size: 30px;
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+}
+
+#course{
+  position: relative;
+  z-index:1;
+  top: -40px;
+  height: 750px;
+  background-color: var(--base1);
+}
+
+#course > .title{
+  padding-top: 60px;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  letter-spacing: 8px;
+}
+
+.circle1{
+  color: var(--base2);
+  margin: auto;
+  text-align:center;
+  width: 100px;
+  height: 54px;
+  position: absolute;
+  left: 50%;
+  margin-top: 20px;
+  transform: translateX(-50%);
+}
+
+.circle2{
+  color: var(--base2);
+  text-align:center;
+  width: 100px;
+  height: 54px;
+  position: absolute;
+  right: 50%;
+  margin-top: 20px;
+  transform: translateX(50%);
+}
+
+.box{
+  padding-top: 70px;
+}
+
+.year{
+  font-weight: bold;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.text{
+  line-height: 170%;
+  font-size: 17px;
+  color: white;
+}
+
+.box1{
+  width: 100%;
+  text-align: right;
+  padding-right: 700px;
+  padding-bottom: 20px;
+}
+
+.box2{
+  width:100%;
+  text-align: left;
+  padding-left: 700px;
+  padding-bottom: 20px;
+}
+
+.box3{
+  width: 100%;
+  text-align: right;
+  padding-right: 700px;
+  padding-bottom: 20px;
+}
+
+.box:before {
+  content:"";
+  position:absolute;
+  left:50%;
+  top:0;
+  width: 2px;
+  background:#ddd;
+}
+
+.box:first-child:before {
+  background-color: var(--base2);
+  top:160px;
+  height:450px;
+}
+
+.image_3{
+  position: relative;
+  z-index:3;
+  text-align: center; /*circle center*/
+  background: var(--base3);
+  color: white;
+  margin: 0 auto;
+  line-height: 80px;
+  font-size: 30px;
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+  top: -80px;
+}
+
+#skill{
+  background-image: url("./55.jpg");
+  background-position:center;
+  background-size: 1263px 500px;
+  height: 190px;
+  position: relative;
+  z-index:2;
+  top: -120px;
+  color: white;
+}
+
+.rgb2{
+  background-color: rgba(140, 132, 191, 0.2);
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
+.skill_title{
+  padding-top: 60px;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  letter-spacing: 8px;
+}
+
+#skill2{
+  position: relative;
+  top: -120px;
+}
+
+#skill2 > .element{
+  padding-top: 70px;
+  position: absolute;
+  width: 1000px;
+  height: 400px;
+  top: 50%;
+  left: 9%;
+}
+
+.pie-chart {
+  position: relative;
+  display:inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.pie-chart1, .pie-chart2, .pie-chart3, .pie-chart4{
+  margin-left:80px;
+}
+
+.center{
+  background: #fff;
+  display : block;
+  position: absolute;
+  top:50%; left:50%;
+  width:120px; height:120px;
+  border-radius: 50%;
+  text-align:center; line-height: 120px;
+  font-size:20px;
+   transform: translate(-50%, -50%);
+}
+
+.replay{
+  margin-left : 10px;
+  font-size:20px;
+}
+
+.replay a:link{
+	color: var(--base3);
+}
